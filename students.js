@@ -3,13 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const studentForm = document.getElementById("student-form");
 
   async function loadStudents() {
-      studentList.innerHTML = ""; // Limpa a lista antes de carregar novos dados
+      studentList.innerHTML = "";
       try {
           const response = await fetch("/students");
           const students = await response.json();
           students.forEach(student => {
               const studentDiv = document.createElement("div");
-              studentDiv.classList.add("student-item"); // Estilo adicional
+              studentDiv.classList.add("student-item"); 
               studentDiv.innerHTML = `
                   <p><strong>Id:</strong> ${student.id}</p>
                   <p><strong>Nome:</strong> ${student.name}</p>
