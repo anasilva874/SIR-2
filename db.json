@@ -1,0 +1,16 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Ana",
+      "course": "Engenharia Informática",
+      "year": 3
+    },
+    {
+      "id": 2,
+      "name": "Francisco",
+      "course": "Engenharia Alimentar",
+      "year": 2
+    }
+  ]
+}

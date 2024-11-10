@@ -1,0 +1,5 @@
+npm install
+npm install lowdb
+npm install express
+npm install cors
+node app.mjs ou npm start  

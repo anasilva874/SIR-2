@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Estudantes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>API Estudantes</h1>
+        <nav>
+            <a href="/about">Sobre</a>
+            <a href="/doc">Documentação</a>
+        </nav>
+        <p>Esta API fornece operações CRUD para a gestão de alunos.</p>
+    </header>
+    
+    <section>
+        <h2>Todos os estudantes</h2>
+        <div id="student-list"></div>
+    </section>
+    
+    <section>
+        <h2>Adicionar um novo estudante</h2>
+        <form id="student-form">
+            <label for="id">Id</label>
+            <input type="number" id="id" name="id" required>
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" required>
+            <label for="course">Curso</label>
+            <input type="text" id="course" name="course" required>
+            <label for="year">Ano de escolaridade</label>
+            <input type="number" id="year" name="year" required>
+            <button type="submit">Adicionar Estudante</button>
+        </form>
+    </section>
+
+    <script src="students.js"></script>
+</body>
+</html>

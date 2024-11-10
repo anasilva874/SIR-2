@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Documentação</h1>
+        <nav>
+            <a href="/" class="btn">Home</a>
+            <a href="/about" class="btn">Sobre</a>
+        </nav>
+        <p>Esta página tem todos os detalhes sobre as funcionalidades e objetivos da API.</p>
+    </header>
+
+    <section>
+        <h2>Atividade Prática #2 (RESTful API)</h2>
+        <h3>Objetivo:</h3>
+        <p>Neste atividade prática, pretende-se que desenvolva uma API RESTful para gerir informações de uma aplicação fictícia.
+
+            A API deverá suportar operações CRUD (Create, Read, Update, Delete) e pode ser implementada utilizando a biblioteca lowDB, uma base de dados baseada em documentos gerida diretamente em JavaScript.
+            
+            Esta atividade tem como objetivo reforçar o domínio de conceitos como manipulação de rotas e desenvolvimento de APIs RESTful.</p>
+
+        <h3>Requisitos do Projeto</h3>
+        
+        <h4>1. Setup do Projeto</h4>
+        <p>Configure um projeto Node.js com Express</p>
+        <p>Instale a biblioteca lowDB https://github.com/typicode/lowdb</p>
+        <p>Estruture a aplicação de forma modular, organizando as rotas(onsidere usar routers do express)</p>
+        
+        <h4>2. Modelo de Dados</h4>
+        <p>A API deve simular a gestão de um recurso, como, por exemplo, "Students" ou "Books" ou "Courses". Defina um modelo de dados básico, incluindo: ID, Nome e Atributos adicionais.</p>
+        
+        <h4>3. Implementação de Rotas CRUD</h4>
+        <p>GET /students - Retorna todos os itens.</p>
+        <p>GET /students/{id} - Retorna um item específico por id.</p>
+        <p>POST /students - Cria um novo item.</p>
+        <p>PUT /students/{id} - Atualiza os dados de um item existente por id.</p>
+        <p>DELETE /students/{id} - Remove um item específico por id.</p>
+        <p>GET / - retorna uma página de demo da API (index.html)</p>
+        <p>GET /about - retorna uma página com informação dos autores</p>
+        <p>GET /doc - retorna uma página com breve documentação</p>
+        
+        <h4>4. Validação e Tratamento de Erros</h4>
+        <p>Implemente validações de dados garantindo que todos os campos obrigatórios são fornecidos.</p>
+        <p>Retorne http status codes apropriados https://www.restapitutorial.com/introduction/httpmethods</p>
+        
+        <h4>5. Persistência de Dados com lowdb</h4>
+        <p>Use um ficheiro JSON para um estrutura de dados</p>
+        <p>Inicialize a DB com alguns dados.</p>
+        <p>Utilize lowDB para armazenar os dados. Configure o lowDB para guardar os dados num ficheiro JSON local.</p>
+        <p>As operações de leitura e escrita devem manipular o ficheiro JSON, garantindo a persistência dos dados.</p>
+        
+        <h4>6. Teste</h4>
+        <p>Teste a API com ferramentas como o cURL ou PostMan</p>
+        <p>Teste localmente</p>
+
+        <h4>7. Demo</h4>
+        <p>Implemente uma página que faça o consumo da API e demonstre todas as rotas</p>
+        <p>Veja a pasta sampledemo para um possível código base da página de Demo</p>
+        
+        <h4>8. Publicação</h4>
+        <p>O trabalho deve ser deployed no render.com</p>
+        
+        <h4>9. Entrega</h4>
+        <p>O código do trabalho é suportado pelo repositórios gitHub.com classroom</p>
+        <p>Deverá refazer o ficheiro README.md para incluir documentação minima do projeto</p>
+        <p>No moodle será solicitado o endereço de publicação e o nome do repositório</p>
+    </section>
+</body>
+</html>
